@@ -6,11 +6,11 @@ const VideoDetail = ({video}) => {
 	}
 
 	const videoID = video.id.videoId;
-	const URL = `https://www.youtube.com/embed/${videoID}`;
+	const URL = `http://www.youtube.com/embed/${videoID}`;
 
 	return (
 		<div className='video-detail col-md-8'>
-			<div className='embed-responsive embed-responsive-26by9'>
+			<div className='embed-responsive-26by9'>
 				<iframe className='embed-responsive-item' src={URL}></iframe>
 			</div>
 			<div className='details'>
